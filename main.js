@@ -50,6 +50,27 @@ console.log('Challenge Nested')
 
 // Challenge Nested
 
+
+let a = new Array(4);
+for (let i = 0; i < 4; i++) {
+    a[i] = new Array(4);
+    for (let j =0; j < 4; j++){
+       if ((i % 2 == 0) && (j % 2 == 0)){
+           a[i][j] = 0;
+        } else { 
+            if ((i % 2 == 1) && (j % 2 == 1)) {
+                a[i][j] = 0;
+            } else {
+                    a[i][j] = 1;
+                   }
+       }
+    }
+}
+console.log(a);
+
+
+// Lazy way
+
 var a = [1,2,3,1,2,3,4];
 var map = a.reduce(function(obj, b) {
   obj[b] = ++obj[b] || 1;
@@ -65,3 +86,5 @@ let pattern = [
     
 ];
 console.log(pattern);
+
+
